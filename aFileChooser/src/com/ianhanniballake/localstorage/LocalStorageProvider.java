@@ -53,7 +53,7 @@ public class LocalStorageProvider extends DocumentsProvider {
         final MatrixCursor result = new MatrixCursor(projection != null ? projection
                 : DEFAULT_ROOT_PROJECTION);
         // Add Home directory
-        File homeDir = Environment.getExternalStorageDirectory();
+        File homeDir = new File("/mnt");
         final MatrixCursor.RowBuilder row = result.newRow();
         // These columns are required
         row.add(Root.COLUMN_ROOT_ID, homeDir.getAbsolutePath());

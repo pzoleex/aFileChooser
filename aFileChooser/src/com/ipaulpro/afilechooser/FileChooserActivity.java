@@ -46,9 +46,7 @@ public class FileChooserActivity extends FragmentActivity implements
         OnBackStackChangedListener, FileListFragment.Callbacks {
 
     public static final String PATH = "path";
-    public static final String EXTERNAL_BASE_PATH = Environment
-            .getExternalStorageDirectory().getAbsolutePath();
-
+    public static final String EXTERNAL_BASE_PATH = "/mnt";
     private static final boolean HAS_ACTIONBAR = Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB;
 
     private FragmentManager mFragmentManager;
